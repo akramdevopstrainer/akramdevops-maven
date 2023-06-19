@@ -1,0 +1,63 @@
+📚 Technical Exercise Document: Building a Sample Maven Project
+
+🏗️ **Step 1: Create a directory**
+```
+mkdir md-devops-cicd02
+```
+This command creates a new directory called "md-devops-cicd02" where we will perform the project setup.
+
+📂 **Step 2: Change to the directory**
+```
+cd md-devops-cicd02
+```
+This command changes the current working directory to the newly created "md-devops-cicd02" directory.
+
+🚀 **Step 3: Generate a Maven project**
+```
+mvn archetype:generate
+```
+This command generates a new Maven project using a predefined project template or archetype. It prompts you to select the archetype, which determines the project structure and dependencies. You can choose from various archetypes depending on your project requirements.
+
+📁 **Step 4: Navigate to the project directory**
+```
+cd new-project/
+```
+This command changes the current working directory to the "new-project" directory, which contains the generated Maven project.
+
+📄 **Step 5: View the pom.xml file**
+```
+cat pom.xml
+```
+This command displays the contents of the "pom.xml" file, which is the project's configuration file in XML format. The pom.xml file defines the project's metadata, dependencies, build settings, and other configurations.
+
+🔧 **Step 6: Compile the project**
+```
+mvn compile
+```
+This command compiles the Java source code in the project. It checks for any compilation errors and generates the compiled bytecode (.class files) in the "target/classes" directory.
+
+🧪 **Step 7: Run tests**
+```
+mvn test
+```
+This command executes the unit tests written for the project. It runs the test cases and reports the test results. The test results help ensure the correctness of the code and verify that it meets the expected behavior.
+
+📦 **Step 8: Package the project**
+```
+mvn package
+```
+This command creates a distributable package of the project, typically a JAR (Java Archive) file. It includes the compiled classes, resources, and other necessary files in the package. The packaged JAR file is created in the "target" directory.
+
+📥 **Step 9: Install the project**
+```
+mvn install
+```
+This command installs the project artifact into the local Maven repository. It copies the project's packaged JAR file and the pom.xml file to the local repository. This allows other Maven projects on the same machine to use this project as a dependency.
+
+🚀 **Step 10: Deploy the project**
+```
+mvn deploy
+```
+This command deploys the project artifact to a remote Maven repository. It allows the artifact to be accessible and usable by other developers or projects. The deployment is typically done to a configured remote repository, such as a company's internal repository or a public repository like Maven Central.
+
+🎉 Congratulations! You have completed the Maven lifecycle for the sample project. By following these steps, you have gained hands-on experience with building a Maven project and understanding the various stages of the Maven lifecycle. Well done! 🎉
